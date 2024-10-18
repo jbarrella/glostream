@@ -1,100 +1,79 @@
+import { Mail, BriefcaseBusiness } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <div className="flex flex-col min-h-screen">
+      <div className="flex justify-center items-center gap-4 pt-6">
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col gap-2 items-center">
+            <span className="text-5xl font-bold text-white">
+              GloStream Tech
+            </span>
+            <span className="text-xl text-gray-300">
+              Software services & consulting
+            </span>
+          </div>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:jbarrella@glostreamtech.com"
+            className="flex flex-row rounded-md border-2 border-white px-4 py-2 text-white transition-colors duration-200 hover:bg-white hover:text-black w-fit"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            <Mail className="mr-2" />
+            Contact Us
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <Image
+          src="/logo-sqaure-zinc-900.png"
+          alt="GloStream Tech"
+          width={200}
+          height={200}
+        />
+      </div>
+
+      <div className="w-[40%] mx-auto border border-gray-700 my-8"></div>
+
+      <section className="flex-grow mt-8 flex flex-col items-center gap-12 mb-16">
+        <h1 className="text-6xl font-bold text-white">
+          Our Projects <BriefcaseBusiness className="inline-block w-8 h-8" />
+        </h1>
+        <div className="flex flex-row gap-8">
+          <div>
+            <a href="https://keyseer.com" target="_blank">
+              <div className="flex flex-col items-center justify-center gap-4 p-4 w-[440px] h-[240px] rounded-md bg-[url('/keyseer-screenshot.png')] bg-cover bg-center hover:scale-105 transition-transform duration-300 relative">
+                <div className="absolute inset-0 bg-black opacity-30"></div>
+                <span className="text-white bg-black text-xl p-2 rounded-md font-semibold z-10">
+                  KeySeer
+                </span>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="https://zoomprop.com" target="_blank">
+              <div className="flex flex-col items-center justify-center gap-4 p-4 w-[440px] h-[240px] rounded-md bg-[url('/zoomprop-screenshot.png')] bg-cover bg-center hover:scale-105 transition-transform duration-300 relative">
+                <div className="absolute inset-0 bg-black opacity-30"></div>
+                <span className="text-white bg-black text-xl p-2 rounded-md font-semibold z-10">
+                  Zoomprop
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="mt-16 py-6 text-center text-sm text-gray-500">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-center gap-4 max-sm:flex-col max-sm:gap-2">
+            <span className="text-white max-sm:scale-75">
+              <Image
+                src="/logo-sqaure-zinc-900.png"
+                alt="GloStream Tech"
+                width={50}
+                height={50}
+              />
+            </span>
+            © 2024 GloStream Limited. All rights reserved
+          </div>
+        </div>
       </footer>
     </div>
   );
