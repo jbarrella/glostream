@@ -71,7 +71,12 @@ export default function Home() {
                 height={50}
               />
             </span>
-            © 2024 GloStream Limited. All rights reserved
+            <div className="flex flex-col items-center">
+              <span>© 2024 GloStream Limited. All rights reserved</span>
+              <span className="text-xs mt-1">
+                37 Buitenkant Street, Cape Town, South Africa
+              </span>
+            </div>
           </div>
         </div>
       </footer>
