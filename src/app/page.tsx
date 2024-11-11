@@ -60,6 +60,72 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="flex-grow mt-8 flex flex-col items-center gap-12 mb-16">
+        <h1 className="text-6xl font-bold text-white">About</h1>
+        <div className="flex flex-col gap-8 w-[60%] mx-auto">
+          <p className="text-xl text-gray-300 mx-auto">
+            GloStream Tech is a software services and consulting company that
+            specializes in building custom software solutions for businesses.
+            Including data analytics dashboards and cloud infrastructure. We
+            specialize in Python backend development, data engineering, and
+            full-stack development with React and NextJS.
+          </p>
+          <div className="flex flex-col justify-start gap-6">
+            <h2 className="text-2xl font-semibold text-white">
+              Technologies We Work With:
+            </h2>
+            <div className="grid grid-cols-2 gap-4 text-gray-300">
+              <div>
+                <h3 className="text-lg font-medium text-white mb-2">Backend</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>Django</li>
+                  <li>PostgreSQL</li>
+                  <li>Redis</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-white mb-2">
+                  Frontend
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                  <li>Shadcn UI</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-white mb-2">
+                  Cloud & DevOps
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>AWS</li>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
+                  <li>CI/CD</li>
+                  <li>Terraform</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-white mb-2">
+                  Data Engineering
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Apache Airflow</li>
+                  <li>Apache Spark</li>
+                  <li>dbt</li>
+                  <li>Snowflake</li>
+                  <li>BigQuery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="mt-16 py-6 text-center text-sm text-gray-500">
         <div className="container mx-auto">
           <div className="flex items-center justify-center gap-4 max-sm:flex-col max-sm:gap-2">
@@ -74,7 +140,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <span>© 2024 GloStream Limited. All rights reserved</span>
               <span className="text-xs mt-1">
-                37 Buitenkant Street, Cape Town, South Africa
+                1st Floor Oliaji Trade Center, Victoria, Seychelles
               </span>
             </div>
           </div>
