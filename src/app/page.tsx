@@ -86,6 +86,14 @@ export default function Home() {
                 </ul>
               </div>
               <div>
+                <h3 className="text-lg font-medium text-white mb-2">AI</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>OpenAI, LLama, Gemini</li>
+                  <li>LangChain</li>
+                  <li>AWS Sagemaker</li>
+                </ul>
+              </div>
+              <div>
                 <h3 className="text-lg font-medium text-white mb-2">
                   Frontend
                 </h3>
