@@ -47,16 +47,6 @@ export default function Home() {
               </div>
             </a>
           </div>
-          <div>
-            <a href="https://zoomprop.com" target="_blank">
-              <div className="flex flex-col items-center justify-center gap-4 p-4 w-[440px] h-[240px] rounded-md bg-[url('/zoomprop-screenshot.png')] bg-cover bg-center hover:scale-105 transition-transform duration-300 relative">
-                <div className="absolute inset-0 bg-black opacity-30"></div>
-                <span className="text-white bg-black text-xl p-2 rounded-md font-semibold z-10">
-                  Zoomprop
-                </span>
-              </div>
-            </a>
-          </div>
         </div>
       </section>
 
